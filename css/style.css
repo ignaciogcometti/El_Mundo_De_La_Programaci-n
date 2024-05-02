@@ -2,18 +2,44 @@
     padding: 3px;
     margin: 2px;
     margin-left: 5px;
-    font-family:;
+    font-family: "danger_font";
 }
 
 html {
     font-size: 10px;
-    font-family:;
+    font-family: "danger_font";
 }
+@font-face {
+    font-family: "danger_font";
+    src: url("../fonts/DangerNightPersonalUse-owdl4.otf") format("truetype");
+}
+
 
 body {
     background-color: #2e1279fe;
-    background-image: url(../img/coderainbow.jpg);
-    background-image: cover;
-    font-size: 2rem;
-    font-family: "Signika Negative", sans-serif;
+    background-image: url(../img/backfondgif.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 10rem;
+    display: flex;
+    justify-content: center;
+    color: rgb(198, 201, 208);
+    border-width: 5px 10px 7px 12px; /* Ancho de los bordes */
+    border-style: solid; /* Estilo de los bordes */
+    border-image: linear-gradient(to right, red, cyan, green, yellow, red); /* Gradiente de colores */
+    border-image-slice: 1; /* Espacio para el gradiente */
+    animation: movimiento-color 1s infinite linear; /* Animación de movimiento */
+}
+
+@keyframes movimiento-color {
+    0% { border-image-offset: 0; } /* Inicio del gradiente en la parte superior */
+    100% { border-image-offset: 100%; } /* Fin del gradiente en la parte superior */
+
+}
+header {
+    background-color: rgba(8, 0, 120, 0.348);
 }
