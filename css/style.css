@@ -1,0 +1,19 @@
+* {
+    padding: 3px;
+    margin: 2px;
+    margin-left: 5px;
+    font-family:;
+}
+
+html {
+    font-size: 10px;
+    font-family:;
+}
+
+body {
+    background-color: #2e1279fe;
+    background-image: url(../img/coderainbow.jpg);
+    background-image: cover;
+    font-size: 2rem;
+    font-family: "Signika Negative", sans-serif;
+}
