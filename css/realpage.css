@@ -1,0 +1,126 @@
+* {
+    padding: 2px;
+    margin-left: 5px;
+    font-family: "romanicumitalic", sans-serif;
+}
+
+html {
+    font-size: 10px;
+    font-family: "romanicumitalic", sans-serif;
+}
+
+@font-face {
+    font-family: "romanicumitalic";
+    src: url("../fonts/Romanicum\ Bold\ Italic.ttf") format("truetype");
+}
+
+body {
+    background-color: #2e1279fe;
+    background-image: url(../img/backkground.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 8rem;
+    color: rgb(255, 255, 255);
+    border-width: 5px 10px 7px 12px;
+    border-style: solid;
+    border-image: linear-gradient(to right, red, cyan, green, yellow, red);
+    border-image-slice: 1;
+    animation: movimiento-color 1s infinite linear;
+}
+header {
+    margin-top: 10px;
+    background-color: #282a2e;
+}
+
+.navbar {
+    background-color: #282a2e;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #a80a0a;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #c5c8c6;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #81a2be;
+}
+
+.header {
+    text-align: center;
+    padding: 4rem 0;
+    background: linear-gradient(to bottom, #1d1f21, #282a2e);
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.main-content {
+    padding: 1rem 0;
+    text-align: flex-start;
+}
+
+.code-container {
+    background-color: #282a2e;
+    padding: 1rem;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: left;
+    
+}
+.code-container2 {
+    background-color: #282a2e;
+
+    border-radius: 5px;
+    display: inline-block;
+    text-align: left;
+    font-size: 15px;
+}
+
+pre {
+    margin: 0;
+    color: #c5c8c6;
+}
+
+code {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.carousel-inner img {
+    height: 300px; /* Ajusta la altura de las imágenes según tus necesidades */
+    object-fit: cover; /* Asegúrate de que las imágenes se ajusten bien al contenedor */
+}
