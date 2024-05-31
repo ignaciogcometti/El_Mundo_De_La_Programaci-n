@@ -1,6 +1,6 @@
 * {
-    padding: 2px;
-    margin-left: 5px;
+    padding: 0;
+    margin: 0;
     font-family: "romanicumitalic", sans-serif;
 }
 
@@ -11,7 +11,7 @@ html {
 
 @font-face {
     font-family: "romanicumitalic";
-    src: url("../fonts/Romanicum\ Bold\ Italic.ttf") format("truetype");
+    src: url("../fonts/Romanicum Bold Italic.ttf") format("truetype");
 }
 
 body {
@@ -19,37 +19,42 @@ body {
     background-image: url(../img/backkground.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;}
+    background-repeat: no-repeat;
+}
 
 h1 {
+    background-color: #282a2e;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 70px;
     margin-bottom: 20px;
-    font-size: 8rem;
+    font-size: 6rem;
     color: rgb(255, 255, 255);
     border-width: 5px 10px 7px 12px;
     border-style: solid;
     border-image: linear-gradient(to right, red, cyan, green, yellow, red);
     border-image-slice: 1;
     animation: movimiento-color 1s infinite linear;
+    width: 80%; /* Ajusta el ancho del título */
+    margin-left: auto;
+    margin-right: auto;
 }
-header {
-    margin-top: 10px;
-    background-color: #282a2e;
-}
+
+
 
 .navbar {
     background-color: #282a2e;
     padding: 1rem 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+.navbar.fixed-top {
+    /* Ajusta el valor según lo que necesites */
+    margin-left: 3px;
+    margin-right: 3px;
+}
 
 .container {
     width: 90%;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .logo {
@@ -57,8 +62,17 @@ header {
     color: #a80a0a;
     text-decoration: none;
 }
+.logo:hover {
+    color: #ff0000; /* Cambia el color del enlace cuando el mouse está encima */
+
+}
+/* Añade este estilo al final de tu archivo CSS */
+.logo.selected {
+    color: #ff0000; /* Cambia el color del logo cuando está seleccionado */
+}
 
 .nav-links {
+    font-size: 13px;
     list-style: none;
     display: flex;
     gap: 1rem;
@@ -72,21 +86,11 @@ header {
     text-decoration: none;
     color: #c5c8c6;
     transition: color 0.3s ease;
+    text-decoration: underline;
 }
 
 .nav-links a:hover {
-    color: #81a2be;
-}
-
-.header {
-    text-align: center;
-    padding: 4rem 0;
-    background: linear-gradient(to bottom, #1d1f21, #282a2e);
-}
-
-.header h1 {
-    font-size: 3rem;
-    margin: 0;
+    color: #ecfff3;
 }
 
 .main-content {
@@ -96,19 +100,23 @@ header {
 
 .code-container {
     background-color: #282a2e;
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 5px;
     display: inline-block;
     text-align: left;
-    
+    max-width: 100%;
+    word-wrap: break-word;
 }
+
 .code-container2 {
     background-color: #282a2e;
-
+    padding: 0.5rem;
     border-radius: 5px;
     display: inline-block;
     text-align: left;
-    font-size: 15px;
+    max-width: 100%;
+    word-wrap: break-word;
+    font-size: 1.5rem;
 }
 
 pre {
@@ -120,7 +128,13 @@ code {
     font-family: 'Source Code Pro', monospace;
 }
 
-.carousel-inner img {
+.carousel-inner {
+    width: 100%;
     height: 300px; /* Ajusta la altura de las imágenes según tus necesidades */
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
     object-fit: cover; /* Asegúrate de que las imágenes se ajusten bien al contenedor */
 }
