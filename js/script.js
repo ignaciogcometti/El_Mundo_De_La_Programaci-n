@@ -4,5 +4,5 @@ document.getElementById('enterButton').addEventListener('click', function() {
 
 function changeColorAndGoBack(element) {
         element.classList.add("selected"); // Agrega la clase "selected" al logo para cambiar su color
-        window.history.back(); // Navega hacia atrás en la historia del navegador
+        window.location.href = "../index.html" 
 }
