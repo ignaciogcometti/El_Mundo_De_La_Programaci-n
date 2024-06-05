@@ -65,6 +65,20 @@ h3 {
     margin-right: auto;
 }
 
+h4 {
+    background-color: #282a2e;
+    text-align: center;
+    font-size: 5rem;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border-width: 5px 10px 7px 12px;
+    width: 45%;
+    
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
 .navbar {
     background-color: #282a2e;
     padding: 1rem 0;
@@ -194,4 +208,24 @@ code {
     align-items: center;
     align-self: center;
     font-size: 25px;
+}
+
+footer {
+    background-color: #282a2e;
+    padding: 1rem 0;
+    text-align: center;
+
+    width: 100%;
+    bottom: 0;
+}
+
+.footer .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer-text {
+    color: #c5c8c6;
+    font-size: 1.5rem;
+    font-family: "romanicumitalic", sans-serif;
 }

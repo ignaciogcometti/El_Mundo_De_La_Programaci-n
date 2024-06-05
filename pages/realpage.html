@@ -13,18 +13,19 @@
         <div class="container">
             <a href="#" class="logo" onclick="changeColorAndGoBack(this)">DojoDigital</a>
             <ul class="nav-links">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Fundamentos</a></li>
-                <li><a href="#">Roles</a></li>
-                <li><a href="#">Busqueda Laboral</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#fundamentos">Fundamentos</a></li>
+                <li><a href="#roles">Roles</a></li>
+                <li><a href="#busqueda-laboral">Busqueda Laboral</a></li>
             </ul>
         </div>
     </nav>
-    <header>
+    
+    <header id="inicio">
         <h1>¿Qué es la programación?</h1>
     </header>
 
-    <div class="container text-center">
+    <div class="container text-center" id="fundamentos">
         <div class="row">
             <div class="col-md-3">
                 <div class="main-content">
@@ -102,10 +103,10 @@ en un maestro del ciberespacio. Bienvenido al dojo digital.
                     <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="../img/exibitions/cr3.jpg""" class="d-block w-100" alt="Imagen 1" />
+                                <img src="../img/exibitions/cr3.jpg" class="d-block w-100" alt="Imagen 1" />
                             </div>
                             <div class="carousel-item">
-                                <img src="../img/boxcode.jpg"" class="d-block w-100" alt="Imagen 2" />
+                                <img src="../img/boxcode.jpg" class="d-block w-100" alt="Imagen 2" />
                             </div>
                             <div class="carousel-item">
                                 <img src="../img/exibitions/cr1.jpg" class="d-block w-100" alt="Imagen 3" />
@@ -146,7 +147,7 @@ Sintaxis: Reglas para escribir instrucciones.
 Variables y Tipos de Datos: Almacenan y manipulan datos (enteros, flotantes, cadenas, booleanos).
 Operadores: Aritméticos (+, -, *, /), relacionales (==, !=, >), lógicos (&&, ||, !).
 
-<span class="resaltar">Estructuras de Contro</span>
+<span class="resaltar">Estructuras de Control</span>
 Condicionales: Ejecutan código basado en condiciones (if, else).
 Bucles: Repetición de código (for, while).
 
@@ -178,47 +179,114 @@ Comentarios: Explican el código para facilitar su comprensión y mantenimiento.
         </div>
     </div>
 
-    <h3>Roles dentro de un ambiente laboral</h3>
+    <h3 id="roles">Roles dentro de un ambiente laboral</h3>
 
-        <div class="cards">
+    <div class="cards">
         <div class="card" style="width: 27rem;">
             <img src="../img/icons/dev.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text"><p class="card-text2">
-                DEVELOPER SOFTWARE</p>Un desarrollador de software escribe y mantiene el código que constituye
-                las aplicaciones y sistemas. Trabajan en equipos para construir nuevas funcionalidades,
-                corregir errores y mejorar el rendimiento del software.</p></div>
-          </div>
-          <div class="card" style="width: 27rem;">
+                <p class="card-text">
+                    <p class="card-text2">DEVELOPER SOFTWARE</p>
+                    Un desarrollador de software escribe y mantiene el código que constituye
+                    las aplicaciones y sistemas. Trabajan en equipos para construir nuevas funcionalidades,
+                    corregir errores y mejorar el rendimiento del software.
+                </p>
+            </div>
+        </div>
+        <div class="card" style="width: 27rem;">
             <img src="../img/icons/po.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <p class="card-text"><p class="card-text2">
-                    PRODUCT MANAGER</p> Un Product Manager es responsable de la visión y 
+                <p class="card-text">
+                    <p class="card-text2">PRODUCT MANAGER</p>
+                    Un Product Manager es responsable de la visión y 
                     estrategia de un producto. Define los objetivos, prioriza características
                     y coordina entre los equipos de desarrollo, diseño y marketing para asegurar
-                    que el producto satisfaga las necesidades de los usuarios y los objetivos del negocio.</p>
+                    que el producto satisfaga las necesidades de los usuarios y los objetivos del negocio.
+                </p>
             </div>
-          </div>
-          <div class="card" style="width: 27rem;">
+        </div>
+        <div class="card" style="width: 27rem;">
             <img src="../img/icons/qa.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <p class="card-text"><p class="card-text2">
-                    TESTER QA MANUAL</p>Un profesional de QA se encarga de garantizar la calidad del
+                <p class="card-text">
+                    <p class="card-text2">TESTER QA MANUAL</p>
+                    Un profesional de QA se encarga de garantizar la calidad del
                     software mediante pruebas exhaustivas. Identifican defectos y aseguran que
                     el producto funcione correctamente antes de su lanzamiento, ayudando a
-                    prevenir errores y mejorar la experiencia del usuario.</p></div>
-          </div>
-
-          <div class="card" style="width: 27rem;">
+                    prevenir errores y mejorar la experiencia del usuario.
+                </p>
+            </div>
+        </div>
+        <div class="card" style="width: 27rem;">
             <img src="../img/icons/rrhh.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <p class="card-text"><p class="card-text2">
-                    RECURSOS HUMANOS</p>El personal de Recursos Humanos gestiona la relación
+                <p class="card-text">
+                    <p class="card-text2">RECURSOS HUMANOS</p>
+                    El personal de Recursos Humanos gestiona la relación
                     entre la empresa y sus empleados. Se encargan de la contratación, 
                     capacitación, bienestar y desarrollo profesional de los empleados, 
-                    además de asegurar el cumplimiento de las políticas y leyes laborales.</p></div>
-          </div>
+                    además de asegurar el cumplimiento de las políticas y leyes laborales.
+                </p>
+            </div>
         </div>
+    </div>
+
+    <div class="container text-center mt-5">
+        <h4>Busqueda laboral</h4>
+        <form action="https://example.com/form-submit" method="POST" class="needs-validation main-content" novalidate>
+            <div class="code-container code-container2">
+                <div class="form-group">
+                    <label for="nombre" class="resaltar">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    <div class="invalid-feedback">
+                        Por favor ingrese su nombre.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="correo" class="resaltar">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="correo" name="correo" required>
+                    <div class="invalid-feedback">
+                        Por favor ingrese un correo electrónico válido.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="telefono" class="resaltar">Teléfono</label>
+                    <input type="tel" class="form-control" id="telefono" name="telefono" required>
+                    <div class="invalid-feedback">
+                        Por favor ingrese un número de teléfono válido.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="experiencia" class="resaltar">Experiencia Laboral</label>
+                    <textarea class="form-control" id="experiencia" name="experiencia" rows="4" required></textarea>
+                    <div class="invalid-feedback">
+                        Por favor ingrese su experiencia laboral.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="rol" class="resaltar">Rol de Interés</label>
+                    <select class="form-control" id="rol" name="rol" required>
+                        <option value="">Seleccione un rol...</option>
+                        <option value="developer">Developer Software</option>
+                        <option value="product_manager">Product Manager</option>
+                        <option value="qa_engineer">QA Engineer</option>
+                        <option value="ux_designer">UX Designer</option>
+                        <option value="scrum_master">Scrum Master</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Por favor seleccione un rol de interés.
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p class="footer-text">
+            Ignacio Cometti y El Mundo de la Programación. Todos los derechos reservados.
+        </p>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
